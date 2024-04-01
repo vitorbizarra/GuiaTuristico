@@ -19,7 +19,7 @@
             android:name=".KasatoMaruActivity"
             android:exported="false" />
         <activity
-            android:name=".JardimBotanicoActivy"
+            android:name=".JardimBotanicoActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
