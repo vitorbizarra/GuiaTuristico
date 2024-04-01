@@ -25,14 +25,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                app:srcCompat="@mipmap/jardimbotanico" />
+                app:srcCompat="@mipmap/kasatomaru1" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
-                app:srcCompat="@mipmap/jardimbotanico1" />
+                app:srcCompat="@mipmap/kasatomaru" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -40,7 +40,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                app:srcCompat="@mipmap/jardimbotanico2" />
+                app:srcCompat="@mipmap/kasatomaru2" />
         </LinearLayout>
     </HorizontalScrollView>
 

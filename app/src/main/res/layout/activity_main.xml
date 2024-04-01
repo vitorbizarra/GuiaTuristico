@@ -56,7 +56,7 @@
                 android:id="@+id/btnKasatoMaru"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@mipmap/kasatomaru" />
+                app:srcCompat="@mipmap/kasatomaru1" />
 
             <TextView
                 android:id="@+id/textView4"
