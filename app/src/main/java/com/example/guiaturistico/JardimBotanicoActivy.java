@@ -26,7 +26,19 @@ public class JardimBotanicoActivy extends AppCompatActivity {
 
         this.btnMapa = (Button) findViewById(R.id.btnMapa);
 
+        this.btnMapa.setOnClickListener(v -> {
+            Uri gmmIntentUri = Uri.parse("geo:0,0?q=Jardim+Botânico+de+Sorocaba+Irmãos+Villas-Bôas");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+            startActivity(mapIntent);
+        });
+
         this.btnSite = (Button) findViewById(R.id.btnSite);
+
+        this.btnSite.setOnClickListener(v -> {
+            Uri webpage = Uri.parse("https://turismo.sorocaba.sp.gov.br/visite/jardim-botanico-irmaos-vilas-boas/#gsc.tab=0");
+            Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+            startActivity(intent);
+        });
 
         this.btnLigar = (Button) findViewById(R.id.btnLigar);
 
@@ -35,11 +47,7 @@ public class JardimBotanicoActivy extends AppCompatActivity {
 
             Intent intent = new Intent(Intent.ACTION_DIAL, uri);
 
-            int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
-
-            if(permissionCheck != PackageManager.PERMISSION_GRANTED){
-                ActivityCompat.requestPermissions(this);
-            }
+            startActivity(intent);
         });
     }
 }
