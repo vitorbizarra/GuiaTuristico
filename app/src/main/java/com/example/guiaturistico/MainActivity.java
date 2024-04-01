@@ -28,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
         this.setIntent(this.btnJardimBotanico, JardimBotanicoActivity.class);
 
         this.btnKasatoMaru = (ImageButton) findViewById(R.id.btnKasatoMaru);
+        this.setIntent(this.btnKasatoMaru, KasatoMaruActivity.class);
 
         this.btnMacs = (ImageButton) findViewById(R.id.btnMacs);
+        this.setIntent(this.btnMacs, MacsActivity.class);
     }
 
     private void setIntent(ImageButton imageButton, Class viewClass)
